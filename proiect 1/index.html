@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="survey">
+    <div class="element" >
+      <title for="title">League of Legends Ticket Request</title>
+      <h1 id="title">League of Legends Ticket Request</h1>
+      <p id="description">Submit a Ticket! So long as it doesn't fall through a portal, we'll get back to you soon.</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Username <input id="name" name="name" type="text" placeholder="Enter your username" required /></label>
+          <label id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your Email" required /></label>
+          <label id="number-label">Age <i>(optional)</i> <input id="number" name="age" type="number" placeholder="Age" min="5" max="120" /></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">CHOOSE A REQUEST TYPE
+            <select id="dropdown" name="dropdown" required> /*CENTREAZA OPTIUNILE!*/
+              <option value="">-</option>
+              <option value="report">Report a player</option>
+              <option value="recovery">Recover my account</option>
+              <option value="personal ban">Discuss a personal ban</option>
+              <option value="general">General question</option>
+              <option value="refund">Biling and payment refunds</option>
+              <option value="tech">Tech issues: Install, Patch, Lag or Crashes</option>
+            </select>  
+          </label>
+        </fieldset> 
+        <fieldset >
+          <label>Region</label> <!-- CLASA PENTRU A MUTA CELELALTE LABELURI SUB */ -->
+          <br>
+          <label for="brazil">Brazil <input type="radio" id="brazil" name="name" value="brazil" class="inline" required="required" /></label> <br>
+          <label for="eune">Europe - Nordic & East <input type="radio" id="eune" name="name" value="eune" class="inline" required="required" /></label><br>
+          <label for="euw">Europe - West <input type="radio" id="euw" name="name" value="euw" class="inline" required="required" /></label><br>
+          <label for="na">North America <input type="radio" id="na" name="name" value="na" class="inline" required="required" /></label>
+        </fieldset>
+        <fieldset>
+          <label>Level</label> <!-- CLASA PENTRU A MUTA CELELALTE LABELURI SUB -->
+          <div>
+            <label for="1-50">1-50 <input type="checkbox" id="1-50" value="1-50" class="inline" /></label><br>
+            <label for="50-100">50-100 <input type="checkbox" id="5-100" value="50-100" class="inline" /></label><br>
+            <label for="100+">100+ <input type="checkbox" id="100+" value="100+" class="inline" /></label>
+          </div>
+          <label for="descr">Please provide a description:
+            <textarea id="descr" name="descr" rows="3" cols="30" ></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+
+</html>
